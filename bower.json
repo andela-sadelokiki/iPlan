@@ -1,0 +1,26 @@
+{
+  "name": "iPlan",
+  "description": "a simple to do app",
+  "main": "index.js",
+  "authors": [
+    "Susan Adelokiki"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-bootstrap": "^2.2.0",
+    "bootstrap": "^3.3.7",
+    "ngstorage": "^0.3.11",
+    "angular-ui-router": "^0.3.1"
+  }
+}
+

@@ -1,0 +1,26 @@
+.container-fluid
+  .row
+    .col-md-3.sidebar
+      .search
+        .row.search_bar
+          input#search_input.form-control.col-md-2.search_input(type="text" placeholder="Search for ...")
+          .col-md-1.search_icon
+            a(href="")
+              span.col-md-1.glyphicon.glyphicon-search(aria-hidden="true")
+
+      .list
+        ul.nav.nav-sidebar
+          li
+            a(ui-sref="home") Todos
+          li
+            a(href="") Starred todos
+          li
+            a(href="") Urgent
+          li
+            a(ng-click="getCompletedtodos()" ui-sref="completed" ) Completed todos
+
+      .newtodo
+        a.create(href="")
+          span.create_icon.glyphicon.glyphicon-plus
+          span Create List 
+div(ui-view="theView")

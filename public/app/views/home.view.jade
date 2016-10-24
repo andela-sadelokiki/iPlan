@@ -1,0 +1,20 @@
+.col-md-9.col-md-offset-3.main
+  .toolbar
+    .logo iPlan
+
+  .add
+    a.create(href="")
+      .add_icon.col-md-1
+        span.col-md-2.glyphicon.glyphicon-plus
+      form(ng-submit="createTodo()")
+        .text_input.col-md-5
+          input.form-control(type="text" ng-model="todo.title", placeholder="Add a to-do ..")
+  
+  .new_list
+    ul.list-group
+      li.list-group-item(ng-repeat="todo in todos")
+        input(type="checkbox" ng-click="completeTodo(todo._id, $index)")
+        span.item(ng-hide="newtodo.editing" ng-dblclick="editTodo(newtodo)"){{todo.title}}
+        input(ng-show="newtodo.editing" ng-model="todo.title" ng-blur="doneEditing(newtodo)" autofocus)
+    
+            

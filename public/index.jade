@@ -1,0 +1,26 @@
+doctype html
+html(lang="en" ng-app="iPlan")
+  head
+    title iPlan
+    base(href="/")
+    link(rel="shortcut icon" href="")
+    link(rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css")
+    link(rel="stylesheet" type="text/css" href="assets/style.css")
+
+  body
+    div(ui-view)
+
+    //- Dep :}
+    script(type="text/javascript" src="libs/angular/angular.min.js")
+    script(type="text/javascript" src="libs/angular-ui-router/release/angular-ui-router.min.js")
+    script(type="text/javascript" src="libs/angular-bootstrap/ui-bootstrap.js")
+    script(type="text/javascript" src="libs/ngstorage/ngStorage.min.js")
+
+    //- MAIN
+    script(type="text/javascript" src="app/app.js")
+    //- SERVICES
+    script(type="text/javascript" src="app/services/todo.service.js")
+    script(type="text/javascript" src="app/services/baseurl.service.js")
+    //- CONTROLLERS
+    script(type="text/javascript" src="app/controllers/todo.ctrl.client.js")
+    
